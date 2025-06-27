@@ -15,4 +15,4 @@ jobs:
                if: ${{github.event.action == 'opened'}}
                run: Running whenever a PR is closed
              - name: testtt
-               run ${{tojson(github)}}  
+               run: ${{tojson(github)}}  
