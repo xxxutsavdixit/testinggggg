@@ -6,7 +6,5 @@ jobs:
         runs-on: ubunut-latest
         steps:
             - name: Show the trigger
-              run: echo "This is how teh job pushed ${{github.event_name}}"
-              
-
-
+              run: |
+                    echo "This is how teh job pushed ${{github.event_name}}"
