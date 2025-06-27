@@ -3,7 +3,7 @@ on:
     push:
 jobs:
     echo:
-        runs-on: ubunut-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Show the trigger
               run: |
