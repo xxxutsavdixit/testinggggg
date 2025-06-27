@@ -11,4 +11,4 @@ jobs:
        - name: print the location 
          run: ls 
        - name: test 
-         run: echo "{{tojson(github)}}"
+         run: echo "${{tojson(github)}}"
