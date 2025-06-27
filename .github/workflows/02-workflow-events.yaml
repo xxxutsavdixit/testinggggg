@@ -1,0 +1,12 @@
+name: 02 - Workflow Events
+on:
+    push:
+jobs:
+    echo:
+        runs-on: ubunut-latest
+        steps:
+            - name: Show the trigger
+              run: echo "This is how teh job pushed ${{github.event_name}}"
+              
+
+
