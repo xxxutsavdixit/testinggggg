@@ -10,3 +10,5 @@ jobs:
          uses: actions/checkout@v4
        - name: print the location 
          run: ls 
+       - name: test 
+         run: echo "{{tojson(github)}}"
