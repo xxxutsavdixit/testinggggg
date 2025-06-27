@@ -1,0 +1,17 @@
+name: 05 - 1 - Event Filters and Activity Types
+on: 
+    pull_request:
+        types:
+            - opened
+            - synchronize
+        branches:
+            - main
+jobs:
+    echo:
+        runs-on: ubuntu-latest
+        steps:
+             - name: test 
+               if: ${{github.event.action == 'opened'}}
+               run: Running whenever a PR is closed
+             - name: testtt
+               run ${{tojson(github)}}  
