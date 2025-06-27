@@ -1,4 +1,5 @@
 name: 05 - 1 - Event Filters and Activity Types
+job_name: "05 - 1 - Event Filters and Activity Types ${{github.event.action}} "
 on: 
     pull_request:
         types:
