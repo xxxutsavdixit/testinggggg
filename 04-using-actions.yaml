@@ -1,0 +1,11 @@
+name: 04 - Using Actions
+on:
+  push:
+jobs:
+  build:
+   runs-on: ubunut-latest
+   steps:
+       - name: Git checkout
+         uses: actions/checkout@v4
+       - name: print the location 
+         run: latest  
