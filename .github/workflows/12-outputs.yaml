@@ -20,10 +20,8 @@ jobs:
 
             - name: Build
               id: build
-              run:  |
-                     cat << EOF
-                     "status=${{ inputs.build-status }}" >> "$GITHUB_OUTPUT"
-                     EOF
+              run:  echo  "status=${{ inputs.build-status }}" >> "$GITHUB_OUTPUT"
+                    
 
             - name: Print GITHUB_OUTPUT pathece
               run: echo "${{steps.build.outputs.status}}" 
