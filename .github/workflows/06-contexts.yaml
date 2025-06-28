@@ -4,7 +4,7 @@ on:
     push:
     workflow_dispatch:
 env:
-    MY_VAR: hello world        
+    MY_VAR: "hello world"        
 jobs:
     echo-data:
          runs-on: ubuntu-latest
@@ -20,6 +20,6 @@ jobs:
                     echo "Workflow: ${{github.workflow}}"
                     echo "Run ID: ${{github.run_id}}"
                     echo "Run number: ${{github.run_number}}"
-                    
+
             - name: Retrieve Variable
               run: echo "${{env.MY_VAR}}"   
