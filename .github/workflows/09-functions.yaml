@@ -6,6 +6,9 @@ jobs:
     echo1:
         runs-on: ubuntu-latest
         steps:
+            - name: Sleep for 20 seconds
+              run: sleet 20 
+               
             - name: Failing step
               run: exit 1
               
@@ -19,9 +22,8 @@ jobs:
 
             - name: I will execute
               if: ${{!cancelled()}}
-              run: echo  "I will always print, except when the workflow is cancelled."
+              run: echo  "I will always print, except when the workflow isnot  cancelled."
             
             - name: I will execute when cancelled
               if: ${{cancelled()}}
               run: echo "etgcydic" 
-               
