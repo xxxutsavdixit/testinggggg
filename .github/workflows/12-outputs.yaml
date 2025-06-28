@@ -19,4 +19,7 @@ jobs:
               id: build
               run:  echo "status=${{ inputs.build-status }}" >> "$GITHUB_OUTPUT"
 
+            - name: Print GITHUB_OUTPUT pathece
+              run: echo "$GITHUB_OUTPUT"  
+
 
