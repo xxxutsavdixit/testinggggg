@@ -18,7 +18,7 @@ on:
                     - v3
 jobs:
     build:
-        runs-on: ubunut-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Build
               run: "Building from tag ${{inputs.tag}}"
