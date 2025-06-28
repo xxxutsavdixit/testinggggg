@@ -36,4 +36,5 @@ jobs:
             - name: Deploy
               run: echo "Deploying"
 
-
+            - name: Deploy1
+              run: echo "${{needs.build.outputs.build-status}}"
