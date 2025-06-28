@@ -8,13 +8,13 @@ on:
                 type: boolean
                 description: true and false
                 default: false
-                options:
-                    - true
-                    - fasle
 env:
-    MY_VAR: "hello world"        
+    MY_VAR: 'hello world'   
 jobs:
-    echo-data:
+    echo-data:  
+         env:
+            MY_OVERWRITTEN_VAR: 'job'
+            MY_JOB_VAR: 'job'
          runs-on: ubuntu-latest
          steps: 
             - name: testing
@@ -31,3 +31,16 @@ jobs:
 
             - name: Retrieve Variable
               run: echo "${{env.MY_VAR}}"
+            
+            - name:  Print Env Variables
+              env: 
+                MY_OVERWRITTEN_VAR: 'steps'
+              run: |
+                   echo "Workflow env: ${{env.MY_WORKFLOW_VAR}}"
+                   echo "Workflow env: ${{env.MY_OVERWRITTEN_VAR }}"
+
+            - name:  Print Env Variables
+              run: |
+                   echo "Workflow env: ${{env.MY_WORKFLOW_VAR}}"
+                   echo "Workflow env: ${{env.MY_OVERWRITTEN_VAR }}"
+              
