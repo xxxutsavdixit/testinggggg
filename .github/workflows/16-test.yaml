@@ -1,14 +1,16 @@
-name: Greet User
-on: 
-   workflow_dispatch:
+name: "Use Composite Hello Action"
+
+on:
+  workflow_dispatch:
 
 jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Run Custom Composite Action
-        uses: ./.github/actions/my_repo_name/
+      - name: Call Say Hello Action
+        uses: ./.github/actions/say-hello
         with:
           name: "Utsav"

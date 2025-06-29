@@ -1,0 +1,12 @@
+name: "Say Hello Action"
+description: "A simple composite action to say Hello"
+inputs:
+  name:
+    description: "Name of the person to greet"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Say Hello
+      run: echo "Hello, ${{ inputs.name }}"
