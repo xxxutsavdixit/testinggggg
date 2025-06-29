@@ -1,5 +1,6 @@
 name: Greet User
-on: [push]
+on: 
+   workflow_dispatch:
 
 jobs:
   greet:
