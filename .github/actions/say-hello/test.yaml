@@ -13,4 +13,4 @@ run:
             node-version: "${{inputs.node-version}}"
 
       - name: listing the content
-        run: ls -la 
+        run: cat ./16-test.yaml
