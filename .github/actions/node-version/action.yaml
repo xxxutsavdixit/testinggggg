@@ -11,6 +11,3 @@ run:
         uses: actions/setup-node@v4
         with :
             node-version: "${{inputs.node-version}}"
-
-      - name: listing the content
-        run: cat ./16-test.yaml
