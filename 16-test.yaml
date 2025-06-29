@@ -1,0 +1,13 @@
+name: Greet User
+on: [push]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Custom Composite Action
+        uses: ./.github/actions/say-hello
+        with:
+          name: "Utsav"
