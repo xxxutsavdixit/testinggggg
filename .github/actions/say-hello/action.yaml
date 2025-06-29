@@ -1,7 +1,7 @@
 name: "Say Hello Action"
 description: "A simple composite action to say Hello"
 inputs:
-  name:
+  test:
     description: "Name of the person to greet"
     required: true
 
@@ -10,4 +10,4 @@ runs:
   steps:
     - name: Say Hello
       shell: bash
-      run: echo "Hello, ${{ inputs.name }}"
+      run: echo "Hello, ${{ inputs.test }}"

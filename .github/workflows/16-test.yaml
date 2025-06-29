@@ -13,4 +13,4 @@ jobs:
       - name: Call Say Hello Action
         uses: ./.github/actions/say-hello
         with:
-          name: "Utsav"
+          test: "Utsav"
