@@ -14,3 +14,8 @@ jobs:
         uses: ./.github/actions/say-hello
         with:
           test: "Utsav"
+
+      - name: surname Hello Action
+        uses: ./.github/actions/say-hello
+        with:
+          surname: "Dixit"          
