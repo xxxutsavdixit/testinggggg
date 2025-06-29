@@ -10,4 +10,4 @@ run:
       - name: Node installation
         uses: actions/setup-node@v4
         with :
-            node-version: "${{inputs.node-version}}"
+            node-version: ${{inputs.node-version}}

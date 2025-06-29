@@ -10,10 +10,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Call Say Hello Action
-        uses: ./.github/actions/say-hello
-        with:
-          test: "Utsav"
 
 
       - name: defining the node 
