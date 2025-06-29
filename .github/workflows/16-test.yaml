@@ -17,6 +17,7 @@ jobs:
 
 
       - name: defining the node 
-        uses: ./.github/actions/say-hello
+        uses: ./.github/actions/node-version
         with :
            node-version: 20
+          
