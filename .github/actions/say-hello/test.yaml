@@ -1,0 +1,16 @@
+name: desfining the node version
+description: Define the ndoe version
+inputs:
+    node-version:
+          description: Define the ndoe version
+          required: true 
+run:
+  using: "composite"
+  steps:
+      - name: Node installation
+        uses: actions/setup-node@v4
+        with :
+            node-version: "${{inputs.node-version}}"
+
+      - name: listing the content
+        run: ls -la 

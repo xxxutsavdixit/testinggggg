@@ -14,3 +14,9 @@ jobs:
         uses: ./.github/actions/say-hello
         with:
           test: "Utsav"
+
+
+      - name: defining the node 
+        uses: ./.github/actions/say-hello
+        with :
+           node-version: 20
