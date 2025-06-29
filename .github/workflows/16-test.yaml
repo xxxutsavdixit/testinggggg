@@ -9,6 +9,6 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run Custom Composite Action
-        uses: ./.github/actions/my_repo_name/action.yaml
+        uses: ./.github/actions/my_repo_name/
         with:
           name: "Utsav"
