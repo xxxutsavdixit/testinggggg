@@ -15,5 +15,6 @@ runs:
 
 
     - name: define version
+      shell: bash
       run: node -v  
 
